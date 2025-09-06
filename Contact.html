@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S JOrok Photos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner">
+   <header>
+        <div>
+        <a href="index.html" class="logo">SJRocky</a>
+        </div>
+
+        <div class="topnav">
+                <a href="index.html">HOME</a>
+                <a href="About.html">ABOUT</a>
+                <a href="Portfolio.html">PORTFOLIO</a>
+                <a class="active" href="Contact.html">CONTACT</a>
+        </div>
+    </header>
+
+     <main>
+    <!-- Hero Banner -->
+    <section class="contact-hero">
+      <h1>CONTACT</h1>
+    </section>
+
+    <!-- Content wrapper -->
+    <section class="contact-wrap">
+      <!-- Contact Form -->
+      <form class="contact-form" action="#" method="post">
+        <h2>Get in Touch</h2>
+        <div class="row-2">
+          <div class="field">
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text" placeholder="First name" required>
+          </div>
+          <div class="field">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" placeholder="Last name" required>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" placeholder="+44 7123 456789">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Booking / Collaboration / Press" required>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your shoot, dates, mood, and location…" required></textarea>
+        </div>
+
+        <button class="btn-primary" type="submit">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+        </form>
+
+      <!-- Contact Info -->
+        <aside class="contact-aside">
+        <div>
+          <h3>Get through to me via my socials</h3>
+            <div class="social-inline">
+            <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@yourhandle" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="mailto:sav1@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        </div>
+
+        <div>
+          <h3>Location</h3>
+          <div class="map-embed">
+            <iframe class="map" loading="lazy" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19800.000000000004!2d-0.1276!3d51.5072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sUK!4v0000000000000">
+            </iframe>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+<script>
+  (function () {
+    function atPageBottom() {
+      // Adjust threshold to trigger a bit before absolute bottom if you wish.
+      const threshold = 8; 
+      const reached = window.innerHeight + window.scrollY >= document.body.offsetHeight - threshold;
+      document.body.classList.toggle('at-bottom', reached);
+    }
+
+    window.addEventListener('scroll', atPageBottom, { passive: true });
+    window.addEventListener('resize', atPageBottom);
+    window.addEventListener('load', atPageBottom);
+    atPageBottom();
+  })();
+</script>
+
+
+</body>
+</html>

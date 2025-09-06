@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S J Orok Photos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner">
+
+    <header>
+        <div>
+        <a href="index.html" class="logo">SJRocky</a>
+        </div>
+
+        <div class="topnav">
+                <a href="index.html">HOME</a>
+                <a class="active" href="About.html">ABOUT</a>
+                <a href="Portfolio.html">PORTFOLIO</a>
+                <a href="Contact.html">CONTACT</a>
+        </div>
+    </header>
+
+    <main>
+    <!-- Hero Banner -->
+    <section class="about-hero">
+    <img src="cjtphotos-327.jpg" alt="About Hero Image">
+    <div class="hero-text">
+      <h1>About Me</h1>
+      <p>Discover my story, journey, and get to know me better.</p>
+    </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="about-content">
+        <div class="about-text">
+        <h2>MY MODELLING JOURNEY</h2>
+        <p>I’m an aspiring model passionate about using fashion and photography as a canvas for storytelling. For me, modeling is more than just posing, it is a story keeping record of every momemt of my life, like they say "catching moment". Life as a journey is an embodiment of emotion, style, and character, so in my way i want to captivates the viewer  while portraying my developing personality as I grow figure myself every step of the way, according to God's divine leading. I enjoy experimenting with different looks, from high-fashion concepts to natural lifestyle shoots, always bringing energy, creativity, and adaptability to every project. Beyond the camera, I’m committed to continuous growth, learning, and collaborating with brands, photographers, and creatives who share a vision for powerful imagery. My goal is to build a career where each shoot inspires curiosity and leaves a lasting impression. If my work resonates with you, I’d love to connect and explore opportunities together.</p>
+        </div>
+
+        <div class="about-photo">
+        <img src="CJT-114.jpg" alt="Model portrait">
+        </div>
+        </div>
+    </section>
+    </main>
+
+    <section class="section">
+        <h2>Featured Works</h2>
+        <p class="section-intro">
+          Explore a curated collection of my work that reflects my passion with some professional photography, precision, and style. 
+          Each project tells a story and showcases a unique perspective, from bold visuals to subtle details.  
+          Take your time to browse, and feel free to connect if something inspires you.
+        </p>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+          <a href="Portfolio.html#portraits">
+          <div class="image-box">
+          <img src="CJT-139.jpg" alt="Portrait 1" class="img-default">
+          <img src="CJT-112.jpg" alt="Portrait 1 Alt" class="img-hover">
+          </div>
+          <h3>Polaroid Series</h3>
+          </a>
+          <p>A timeless collection of expressive portraits that capture raw emotions.</p>
+        </div>
+
+        <div class="feature-card">
+          <a href="Portfolio.html#fashion">
+          <div class="image-box">
+          <img src="CJT-1180.jpg" alt="Portrait 2" class="img-default">
+          <img src="CJT-1158.jpg" alt="Portrait 2 Alt" class="img-hover">
+          </div>
+          <h3>Runway Motion</h3>
+          </a>
+          <p>Exploring modern aesthetics through bold and stylish imagery.</p>
+        </div>
+
+        <div class="feature-card">
+          <a href="Portfolio.html#outdoor">
+          <div class="image-box">
+          <img src="CJT-4563.jpg" alt="Portrait 3" class="img-default">
+          <img src="CJT-4543.jpg" alt="Portrait 3 Alt" class="img-hover">
+          </div>
+          <h3>Highland suits</h3>
+          </a>
+          <p>Natural light photography that blends people and landscapes.</p>
+        </div>
+
+        <div class="feature-card">
+          <a href="Portfolio.html#creative">
+          <div class="image-box">
+          <img src="CJT-4552.jpg" alt="Portrait 4" class="img-default">
+          <img src="CJT-4615.jpg" alt="Portrait 4 Alt" class="img-hover">
+          </div>
+          <h3>Brand Collabs</h3> 
+          </a>
+          <p>Pushing artistic boundaries with unique themes and styling.</p>
+        </div>
+    </div>
+
+    </section>
+
+
+
+    <!-- Call-to-Action button Section -->
+    <section class="cta-section">
+      <a href="Contact.html" class="btn-contact">CONTACT ME</a>
+    </section>
+
+
+    <!-- Social Section (reused from home page) -->
+    <section class="social-section">
+      <nav class="midnav">
+        <a href="index.html">HOME</a>
+        <a href="About.html" class="active">ABOUT</a>
+        <a href="Portfolio.html">PORTFOLIO</a>
+        <a href="Contact.html">CONTACT</a>
+      </nav>
+
+      
+      <div class="social-icons">
+        <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/@yourhandle" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="mailto:youremail@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+<script>
+  (function () {
+    function atPageBottom() {
+      // Adjust threshold to trigger a bit before absolute bottom if you wish.
+      const threshold = 8; 
+      const reached = window.innerHeight + window.scrollY >= document.body.offsetHeight - threshold;
+      document.body.classList.toggle('at-bottom', reached);
+    }
+
+    window.addEventListener('scroll', atPageBottom, { passive: true });
+    window.addEventListener('resize', atPageBottom);
+    window.addEventListener('load', atPageBottom);
+    atPageBottom();
+  })();
+</script>
+
+
+
+</body>
+</html>
