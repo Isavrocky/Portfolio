@@ -167,6 +167,29 @@ header .topnav a {
     left: 60px;
 }
 
+
+/* Tablet */
+@media (max-width: 824px) {
+  .topnav {
+    gap: 20px;   /* tighter spacing */
+  }
+  .topnav a {
+    font-size: 0.95rem;  /* slightly smaller text */
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .topnav {
+    gap: 10px;   /* even smaller gap */
+  }
+  .topnav a {
+    font-size: 0.85rem;  /* smaller text to keep in one line */
+  }
+}
+
+
+
 .topnav a {
     text-decoration: none;
     color: #f3efef;
@@ -851,5 +874,6 @@ iframe.map { width: 100%; height: 100%; border: 0; }
 .social-inline a:hover .fa-linkedin {
   color: #0077B5; /* LinkedIn blue */
 }
+
 
 
