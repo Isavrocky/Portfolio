@@ -878,5 +878,103 @@ header { padding: 28px 24px; }
   .topnav a { font-size: 1rem; }
 }
 
+/* Slideshow stays full-viewport, arrows/buttons adapt */
+.slideshow-container { height: 100vh; }
+
+.prev, .next, .gallery-btn {
+  top: 78%;
+  transform: translate(-50%, -40%); /* for .gallery-btn only */
+}
+.prev, .next { transform: translateY(-40%); }
+
+@media (max-width: 640px){
+  .prev { left: 20px; width: 88px; }
+  .next { right: 20px; width: 88px; }
+  .gallery-btn {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+}
+
+/* Social section spacing & icon size */
+.social-section { padding: 36px 16px; height: auto; }
+.social-icons { gap: 24px; font-size: 1.6rem; transform: none; }
+@media (min-width: 768px){
+  .social-icons { gap: 36px; font-size: 1.8rem; }
+}
+
+
+/* Hero text size & position */
+.about-hero { height: 70vh; }
+.about-hero .hero-text h1 { font-size: clamp(2rem, 3vw + 1rem, 3rem); }
+.about-hero .hero-text p  { font-size: clamp(1rem, 1vw + .75rem, 1.2rem); }
+
+/* Two-column -> one column on smaller screens */
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 36px;
+  padding: 0 16px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+@media (max-width: 900px){
+  .about-content { grid-template-columns: 1fr; gap: 24px; }
+  .about-text    { margin-left: 0; max-width: 100%; }
+  .about-photo   { order: -1; /* photo above text if you like */ }
+}
+.about-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Feature grid under About (4→2→1) */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 1200px;
+  margin: 28px auto 0;
+  padding: 0 12px;
+}
+@media (max-width: 1024px){
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px){
+  .feature-grid { grid-template-columns: 1fr; }
+}
+
+/* Fixed card image box for hover-swap (stays exact size) */
+.feature-card .image-box { height: clamp(260px, 34vw, 400px); }
+.feature-card .image-box img { object-fit: cover; }
+
+
+/* Form + aside stack on phones */
+.contact-wrap {
+  width: min(1100px, 92%);
+  margin: 32px auto 48px;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 32px;
+}
+@media (max-width: 900px){
+  .contact-wrap { grid-template-columns: 1fr; }
+}
+.field input, .field textarea, .field select {
+  font-size: 16px; /* better mobile keyboards on iOS */
+}
+
+<!-- Example tile image -->
+<img 
+  src="images/portrait-1200.jpg"
+  srcset="
+    images/portrait-600.jpg 600w,
+    images/portrait-900.jpg 900w,
+    images/portrait-1200.jpg 1200w,
+    images/portrait-1600.jpg 1600w"
+  sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, (max-width: 1200px) 33vw, 25vw"
+  loading="lazy"
+  decoding="async"
+  alt="Portrait from the studio series">
 
 
