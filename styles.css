@@ -167,6 +167,29 @@ header .topnav a {
     left: 60px;
 }
 
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .topnav {
+    gap: 30px;   /* tighter spacing */
+  }
+  .topnav a {
+    font-size: 0.95rem;  /* slightly smaller text */
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .topnav {
+    gap: 18px;   /* even smaller gap */
+  }
+  .topnav a {
+    font-size: 0.85rem;  /* smaller text to keep in one line */
+  }
+}
+
+
+
 .topnav a {
     text-decoration: none;
     color: #f3efef;
