@@ -174,3 +174,51 @@
 }
 
 
+
+
+
+/* Hero band scales */
+.portfolio-hero {
+  height: 32vh;
+  min-height: 220px;
+  padding: 12px 16px;
+}
+@media (min-width: 768px){
+  .portfolio-hero { height: 40vh; }
+}
+
+/* Full-bleed sections + tight gutters */
+.category-section {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2px;
+  padding: 0 10px;
+}
+@media (max-width: 1200px){ .portfolio-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) { .portfolio-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .portfolio-grid { grid-template-columns: 1fr; } }
+
+/* Tall, slim rectangles; images always fill without gaps */
+.tile { aspect-ratio: 3 / 4; border-radius: 6px; overflow: hidden; }
+.tile img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;    /* fill the rectangle */
+  object-position: 50% 50%;
+}
+
+/* Lightbox remains responsive */
+.lightbox-img { max-width: 92vw; max-height: 86vh; }
+
+/* Header on portfolio: readable over dark hero */
+.portfolio header .topnav a,
+.portfolio header .logo { color: #fff; }
+
+
+
