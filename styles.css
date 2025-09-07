@@ -27,7 +27,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 45px 40px;
+  padding: 20px 40px;
   background: transparent;       /* no white bar */
   box-shadow: none;
   backdrop-filter: none;
