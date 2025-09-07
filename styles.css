@@ -169,9 +169,9 @@ header .topnav a {
 
 
 /* Tablet */
-@media (max-width: 1024px) {
+@media (max-width: 824px) {
   .topnav {
-    gap: 30px;   /* tighter spacing */
+    gap: 20px;   /* tighter spacing */
   }
   .topnav a {
     font-size: 0.95rem;  /* slightly smaller text */
@@ -181,7 +181,7 @@ header .topnav a {
 /* Mobile */
 @media (max-width: 640px) {
   .topnav {
-    gap: 18px;   /* even smaller gap */
+    gap: 10px;   /* even smaller gap */
   }
   .topnav a {
     font-size: 0.85rem;  /* smaller text to keep in one line */
