@@ -1,182 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>S J Orok Photos</title>
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <!-- Your CSS -->
-  <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S J Orok Photos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="home">
-  <!-- Header -->
-  <header>
-    <a href="index.html" class="logo">SJRocky</a>
+<body class="HOME">
+    <header>
+        <div>
+        <a href="index.html" class="logo">SJRocky</a>
+        </div>
 
-    <!-- Desktop nav -->
-    <nav class="topnav" aria-label="Primary">
-      <a class="active" href="index.html">HOME</a>
-      <a href="About.html">ABOUT</a>
-      <a href="Portfolio.html">PORTFOLIO</a>
-      <a href="Contact.html">CONTACT</a>
-    </nav>
+        <div class="topnav">
+                <a class="active" href="index.html">HOME</a>
+                <a href="About.html">ABOUT</a>
+                <a href="Portfolio.html">PORTFOLIO</a>
+                <a href="Contact.html">CONTACT</a>
+        </div>
+    </header>
+    
 
-    <!-- Mobile/Tablet toggle -->
-    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="burger" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
-        <path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+     <!-- Top 60%: Big Slideshow Banner -->
+      <section class="slideshow-container">
+      <div class="slides fade">
+      <img src="CJT-230.jpg" alt="banner">
+      </div>
+      <div class="slides fade">
+      <img src="CJT-4541.jpg" alt="Model Photo 2">
+      </div>
+      <div class="slides fade">
+      <img src="CJT-1157.jpg" alt="Model Photo 3">
+      </div>
+      <div class="slides fade">
+      <img src="CJT-5084.jpg" alt="Model Photo 4">
+      </div>
+
+      <!-- counter -->
+      <div id="slide-counter" class="slide-counter"></div>
+      </section>
+
+      <main>
+        <!-- Arrow codes -->
+      <a class="prev" onclick="changeSlide(-1)">
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="120" height="20" viewBox="0 0 150 20" fill="none">
+      <line x1="148" y1="10" x2="2" y2="10" stroke="beige" stroke-width="3"/>
+      <polyline points="12,4 2,10 12,16" fill="none" stroke="beige" stroke-width="2.5"/>
       </svg>
-      <span class="menu-label">MENU</span>
-    </button>
+      </a>
 
-    <!-- Mobile menu -->
-    <nav id="mobile-menu" class="mobile-nav" hidden aria-label="Mobile">
-      <a href="index.html">HOME</a>
-      <a href="About.html">ABOUT</a>
-      <a href="Portfolio.html">PORTFOLIO</a>
-      <a href="Contact.html">CONTACT</a>
-    </nav>
-  </header>
+        <!-- Gallery button -->
+      <div class="gallery-wrap">
+        <a href="Portfolio.html" class="gallery-btn">Gallery</a>
+      </div>
 
-  <!-- Slideshow / Hero -->
-  <section class="slideshow-container">
-    <div class="slides fade">
-      <img src="CJT-230.jpg" alt="banner"/>
-    </div>
-    <div class="slides fade">
-      <img src="CJT-4541.jpg" alt="Model Photo 2"/>
-    </div>
-    <div class="slides fade">
-      <img src="CJT-1157.jpg" alt="Model Photo 3"/>
-    </div>
-    <div class="slides fade">
-      <img src="CJT-5084.jpg" alt="Model Photo 4"/>
-    </div>
+      <a class="next" onclick="changeSlide(1)">
+      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="120" height="20" viewBox="0 0 150 20" fill="none">
+      <line x1="2" y1="10" x2="148" y2="10" stroke="beige" stroke-width="3"/>
+      <polyline points="138,4 148,10 138,16" fill="none" stroke="beige" stroke-width="2.5"/>
+      </svg>
+      </a>
+    </section>
 
-    <!-- Welcome line over the hero -->
+     <!-- Welcome text above the button -->
     <h2 class="hero-text">Welcome to my portfolio. If my work resonates with you, I’d be delighted to connect.</h2>
 
-    <!-- Slide counter -->
-    <div id="slide-counter" class="slide-counter"></div>
+    <!-- Gallery Button -->
+    <a href="portfolio.html" class="gallery-btn">Gallery</a
 
-    <!-- Arrows -->
-    <a class="prev" onclick="changeSlide(-1)" aria-label="Previous slide">
-      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="120" height="20" viewBox="0 0 150 20" fill="none">
-        <line x1="148" y1="10" x2="2" y2="10" stroke="beige" stroke-width="3"/>
-        <polyline points="12,4 2,10 12,16" fill="none" stroke="beige" stroke-width="2.5"/>
-      </svg>
-    </a>
-
-    <a class="next" onclick="changeSlide(1)" aria-label="Next slide">
-      <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="120" height="20" viewBox="0 0 150 20" fill="none">
-        <line x1="2" y1="10" x2="148" y2="10" stroke="beige" stroke-width="3"/>
-        <polyline points="138,4 148,10 138,16" fill="none" stroke="beige" stroke-width="2.5"/>
-      </svg>
-    </a>
-
-    <!-- Centered Gallery button -->
-    <a href="Portfolio.html" class="gallery-btn">Gallery</a>
-  </section>
-
-  <main>
-    <!-- Bottom: Social + midnav -->
+    <!-- Bottom 40%: Social Icons -->
     <section class="social-section">
-      <nav class="midnav" aria-label="Secondary">
-        <a class="active" href="index.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="Portfolio.html">Portfolio</a>
-        <a href="Contact.html">Contact</a>
-      </nav>
+        
+        <nav class="midnav" aria-label="Secondary">
+                <a class="active" href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="social-icons">
+            <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@yourhandle" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="mailto:sav1@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+  
 
-      <div class="social-icons">
-        <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://tiktok.com/@yourhandle" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="mailto:sav1@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://youtube.com/yourchannel" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      </div>
     </section>
-  </main>
+    </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 ROCKOFSAV. All Rights Reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ROCKOFSAV. All Rights Reserved.</p>
+    </footer>
 
-  <!-- Slideshow JS -->
-  <script>
-    let slideIndex = 1;
-    let slideTimer;
+ <!-- JavaScript for slideshow -->
+<script>
+  let slideIndex = 1;
+  let slideTimer;
 
-    showSlides(slideIndex);
+  // Start the slideshow
+  showSlides(slideIndex);
 
-    function changeSlide(n) {
-      clearTimeout(slideTimer);
-      showSlides(slideIndex += n);
+  // Next/previous controls
+  function changeSlide(n) {
+    clearTimeout(slideTimer); // Stop current timer on manual change
+    showSlides(slideIndex += n);
+  }
+
+  function showSlides(n) {
+    let slides  = document.getElementsByClassName("slides");
+    let counter = document.getElementById("slide-counter"); // get counter element
+    let total   = slides.length;
+
+    if (n > total) slideIndex = 1;
+    if (n < 1) slideIndex = total;
+
+    // Hide all slides
+    for (let i = 0; i < total; i++) {
+      slides[i].style.display = "none";
     }
 
-    function showSlides(n) {
-      const slides  = document.getElementsByClassName("slides");
-      const counter = document.getElementById("slide-counter");
-      const total   = slides.length;
+    // Show the current slide
+    slides[slideIndex - 1].style.display = "block";
 
-      if (n > total) slideIndex = 1;
-      if (n < 1) slideIndex = total;
-
-      for (let i = 0; i < total; i++) {
-        slides[i].style.display = "none";
-      }
-
-      slides[slideIndex - 1].style.display = "block";
-      if (counter) counter.textContent = `${slideIndex}/${total}`;
-
-      slideTimer = setTimeout(() => showSlides(slideIndex + 1), 10000);
+    // Update the counter text
+    if (counter) {
+      counter.textContent = `${slideIndex}/${total}`;
     }
 
-    window.changeSlide = changeSlide;
-  </script>
+    // Set timer to auto change slide every 10 seconds
+    slideTimer = setTimeout(function() {
+      showSlides(slideIndex + 1);
+    }, 10000);
+  }
 
-  <!-- Header scroll background (optional for your home behavior) -->
-  <script>
-    (function () {
-      const header = document.querySelector('header');
-      const hero   = document.querySelector('.slideshow-container') || document.querySelector('.hero');
-      if (!header || !hero) return;
+  window.changeSlide = changeSlide;
+</script>
 
-      function updateHeader() {
-        const threshold = hero.offsetHeight - header.offsetHeight;
-        if (window.scrollY > threshold) header.classList.add('scrolled');
-        else header.classList.remove('scrolled');
+<!-- JavaScript for header background on scroll -->
+<script>
+  (function () {
+    const header = document.querySelector('header');
+    const hero   = document.querySelector('.slideshow-container') || document.querySelector('.hero');
+
+    if (!header || !hero) return;
+
+    function updateHeader() {
+      const threshold = hero.offsetHeight - header.offsetHeight; 
+      if (window.scrollY > threshold) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
       }
+    }
 
-      window.addEventListener('scroll', updateHeader, { passive: true });
-      window.addEventListener('resize', updateHeader);
-      window.addEventListener('load', updateHeader);
-      updateHeader();
-    })();
-  </script>
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    window.addEventListener('resize', updateHeader);
+    window.addEventListener('load', updateHeader);
+    updateHeader();
+  })();
+</script>
 
-  <!-- Mobile menu toggle -->
-  <script>
-    (function () {
-      const btn  = document.querySelector('.nav-toggle');
-      const menu = document.getElementById('mobile-menu');
-      if (!btn || !menu) return;
 
-      function toggleMenu(forceOpen) {
-        const isOpen = forceOpen !== undefined ? forceOpen : (btn.getAttribute('aria-expanded') === 'false');
-        btn.setAttribute('aria-expanded', String(isOpen));
-        menu.hidden = !isOpen;
-        document.body.classList.toggle('no-scroll', isOpen);
-      }
+<!-- JavaScript for header background on to disappear on the home page -->
+<script>
+  (function () {
+    function atPageBottom() {
+      // Adjust threshold to trigger a bit before absolute bottom if you wish.
+      const threshold = 8; 
+      const reached = window.innerHeight + window.scrollY >= document.body.offsetHeight - threshold;
+      document.body.classList.toggle('at-bottom', reached);
+    }
 
-      btn.addEventListener('click', () => toggleMenu());
-      menu.addEventListener('click', (e) => { if (e.target.tagName === 'A') toggleMenu(false); });
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') toggleMenu(false); });
-    })();
-  </script>
+    window.addEventListener('scroll', atPageBottom, { passive: true });
+    window.addEventListener('resize', atPageBottom);
+    window.addEventListener('load', atPageBottom);
+    atPageBottom();
+  })();
+</script>
+
+
+
 </body>
 </html>
-s
